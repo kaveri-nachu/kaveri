@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-int i,n,t1=0,t2=1,next term=0;
+int i,n,t1=0,t2=1,nextterm=0;
 printf("enter the number of terms:");
-scanf("%d"'&n);
+scanf("%d",&n);
 printf("fibonacci series:");
 for(i=1;i<=n;++i)
 {
@@ -17,9 +17,9 @@ if(i==2)
 printf("%d",t2);
 continue;
 }
-next trem=t1+t2;
+nextterm=t1+t2;
 t1=t2;
-t2=next term;
-printf("%d",next term);
+t2=nextterm;
+printf("%d",nextterm);
 }
 }
