@@ -3,34 +3,34 @@
 #include<math.h>
 main()
 {
- float h, a, b, n, x[20], y[20], sum = 0, itgl;
+ float h, a, b, c, p[20], q[20], sum = 0, itgl;
  int i;
  clrscr();
- printf("enter the values of a, b, n");
- scanf("%f%f%f", &a, &b, &n);
- printf("enter the values of x");
+ printf("enter the values of a, b, nc
+ scanf("%f%f%f", &a, &b, &c);
+ printf("enter the values of p");
  for(i = 0; i <= n; i++)
  {
-  scanf("%f", &x[i]);
+  scanf("%f", &p[i]);
  }
- printf("\n enter the values of y");
+ printf("\n enter the values of q");
  for(i = 0; i <= n; i++)
  {
-  scanf("%f", &y[i]);
+  scanf("%f", &q[i]);
  }
- h = (b - a)/n;
- a = x[0];
- b = x[n];
+ h = (b - a)/c;
+ a = p[0];
+ b = p[c];
  for(i = 0; i <= (n-2); i++)
  {
-  x[i] = x[i] + h;
+  p[i] = p[i] + h;
   if(i % 2 == 0)
   {
-   sum = sum + 4 * y[i];
+   sum = sum + 4 * q[i];
   }
   else
   {
-   sum = sum + 2 * y[i];
+   sum = sum + 2 * q[i];
   }
  }
  itgl = sum * (h/3);
