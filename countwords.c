@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main()
 {
-char s[200];
+char k[50];
 printf("enter the string");
 grts(str);
-scanf("%[^\n]s",s);
-for(i=0;s[i]!='\0';i++)
+scanf("%[^\n]k"k);
+for(i=0;k[i]!='\0';i++)
 {
-if(s[i]=='')
+if(k[i]=='')
 count++;
 }
 }
